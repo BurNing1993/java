@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+		<resetJUL>true</resetJUL>
+	</contextListener>
+
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][logagent][%X{LogID}][%-5level][%C][%M,%L][%msg][%thread]%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 注意路徑的配置是以工程根路徑為當前路徑的。eg:ThriftTest目錄為當前路徑 -->
+	<appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>../logs/All.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>../logs/All.%d{yyyy-MM-dd}-%i.log.zip</FileNamePattern>
+			<MaxHistory>90</MaxHistory>
+			<TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<MaxFileSize>300MB</MaxFileSize>
+			</TimeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+		<encoder>
+			<pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][ThriftTest][%X{LogID}][%-5level][%C][%M,%L][%msg][%thread]%n</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+	
+	<appender name="errorRollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter"> 
+	      <level>ERROR</level> 
+	    </filter> 
+		<file>../logs/Error.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>../logs/Error.%d{yyyy-MM-dd}-%i.log.zip</FileNamePattern>
+			<MaxHistory>90</MaxHistory>
+			<TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<MaxFileSize>100MB</MaxFileSize>
+			</TimeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+		<encoder>
+			<pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][ThriftTest][%X{LogID}][%-5level][%C][%M,%L][%msg][%thread]%n</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+	
+	
+
+	<logger name="java.sql" level="info" />
+    <logger name="org.apache.ibatis" level="info"/>
+	<logger name="org.mybatis" level="info" />
+	
+	<root level="INFO">
+		<appender-ref ref="console" />
+		<appender-ref ref="org.junit"/>
+		<appender-ref ref="rollingFile"/>
+		<appender-ref ref="errorRollingFile"/>
+	</root>
+</configuration>

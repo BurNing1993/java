@@ -1,0 +1,29 @@
+{
+  "name": "java_docs",
+  "version": "1.0.0",
+  "description": "java docs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d  docs/.vuepress/dist" 
+  },
+  "keywords": [
+    "Java"
+  ],
+  "author": "Joey",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BurNing1993/java.git"
+  },
+  "homepage": "https://burning1993.github.io/java",
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.3.1",
+    "@vuepress/plugin-back-to-top": "^1.3.1",
+    "@vuepress/plugin-nprogress": "^1.3.1",
+    "gh-pages": "^2.2.0",
+    "vuepress": "^1.3.1"
+  }
+}
