@@ -6,9 +6,13 @@
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
-    "rename-version": "docusaurus-rename-version"
+    "rename-version": "docusaurus-rename-version",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build/java" 
   },
   "devDependencies": {
-    "docusaurus": "^1.14.4"
-  }
+    "docusaurus": "^1.14.4",
+    "gh-pages": "^2.2.0"
+  },
+  "homepage": "https://burning1993.github.io/java/"
 }
