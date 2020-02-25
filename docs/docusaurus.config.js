@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'Java笔记',
+  tagline: 'SpringBoot,SpringCloud实用干货!',
   url: 'https://burning1993.github.io',
   baseUrl: '/java/',
   favicon: 'img/favicon.ico',
@@ -8,14 +8,14 @@ module.exports = {
   projectName: 'java', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Java笔记',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'NoteLogo',
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'docs/doc1', label: 'Docs', position: 'left'},
-        {to: 'blog', label: 'Blog', position: 'left'},
+        { to: 'docs/doc1', label: 'Docs', position: 'left' },
+        { to: 'blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -29,27 +29,13 @@ module.exports = {
         {
           title: 'Docs',
           items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/doc1',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2',
-            },
+
           ],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
+
           ],
         },
         {
@@ -61,16 +47,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://github.com/BurNing1993',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Joey`,
     },
   },
   presets: [
@@ -80,7 +62,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/BurNing1993/java/tree/master/docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

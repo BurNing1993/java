@@ -10,4 +10,8 @@ module.exports = {
     Docusaurus: ['doc1', 'doc2', 'doc3'],
     Features: ['mdx'],
   },
+  secondSidebar: {
+    'Category A': ['doc2'],
+    'Category B': ['doc3'],
+  },
 };
