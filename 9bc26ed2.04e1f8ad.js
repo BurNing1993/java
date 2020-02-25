@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{105:function(e){e.exports=JSON.parse('{"docsSidebars":{"someSidebar":[{"type":"category","label":"SpringBoot","items":[{"type":"link","label":"Base","href":"/java/docs/spring-boot-base"}]}]},"permalinkToSidebar":{"/java/docs/spring-boot-base":"someSidebar"}}')}}]);
