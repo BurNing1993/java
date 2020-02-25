@@ -14,10 +14,10 @@ module.exports = {
         src: 'img/logo.svg',
       },
       links: [
-        { to: 'docs/doc1', label: 'Docs', position: 'left' },
-        { to: 'blog', label: 'Blog', position: 'left' },
+        { to: 'docs/spring-boot-base', label: 'Docs', position: 'right' },
+        { to: 'blog', label: 'Blog', position: 'right' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/BurNing1993',
           label: 'GitHub',
           position: 'right',
         },
