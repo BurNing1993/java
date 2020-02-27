@@ -2,7 +2,8 @@ module.exports = {
   title: 'Java笔记',
   tagline: 'SpringBoot,SpringCloud实用干货!',
   url: 'https://burning1993.github.io',
-  baseUrl: '/java/',
+  baseUrl: '/',
+  // baseUrl: '/java/',
   favicon: 'img/favicon.ico',
   organizationName: 'burning1993', // Usually your GitHub org/user name.
   projectName: 'java', // Usually your repo name.
