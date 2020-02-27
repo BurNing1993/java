@@ -24,3 +24,14 @@ public class ${NAME} {
 
 }
 ```
+
+## 启动参数
+
+### 端口
+
+```java
+// Run>Edit configuration >configuration>Environment>VM options
+-Dserver.port=8888
+```
+
+![启动端口](./img/tip-idea-1.png '启动端口') 

@@ -8,6 +8,7 @@
 module.exports = {
   someSidebar: {
     SpringBoot:['spring-boot-base','spring-boot-lombok','spring-boot-tip'],
-    Tip:['tip-idea','tip-useful'],
+    SpringCloud:['spring-cloud-base'],
+    Tip:['tip-idea','tip-useful','tip-command'],
   }
 };
