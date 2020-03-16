@@ -18,7 +18,7 @@ public class ServerController {
 }
 ```
 
-## RestTemplate
+## RestTemplate(3种方式)
 
 ### 固定 URL
 
@@ -98,6 +98,16 @@ public class WebApplication {
     }
 }
 ```
+
+:::tip
+多模块项目@EnableFeignClients注解增加basePackages参数
+
+```java
+@EnableFeignClients(basePackages="com.xx.xx")
+```
+
+:::
+
 
 3. 使用@FeignClient
 
