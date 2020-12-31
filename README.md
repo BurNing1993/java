@@ -1,3 +1,3 @@
 # Java
 
-learn_java
+## [Docs](https://java-omega.now.sh/)
